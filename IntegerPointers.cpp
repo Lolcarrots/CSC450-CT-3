@@ -6,12 +6,12 @@ int main()
     int number1, number2, number3;
     // Input with validation
     while (true) {
-        cout << "Enter first integer value: ";
+        cout << "Enter first integer: ";
         if (cin >> number1) {
             char nextChar;
-            if (cin.get(nextChar) && nextChar != '\n') {
+            cin.get(nextChar);
+            if (nextChar != '\n') {
                 cout << "Enter an integer!\n";
-                cin.clear();
                 while (cin.get() != '\n');
                 continue;
             }
@@ -25,9 +25,9 @@ int main()
         cout << "Enter second integer: ";
         if (cin >> number2) {
             char nextChar;
-            if (cin.get(nextChar) && nextChar != '\n') {
+            cin.get(nextChar);
+            if (nextChar != '\n') {
                 cout << "Enter an integer!\n";
-                cin.clear();
                 while (cin.get() != '\n');
                 continue;
             }
@@ -41,9 +41,9 @@ int main()
         cout << "Enter third integer: ";
         if (cin >> number3) {
             char nextChar;
-            if (cin.get(nextChar) && nextChar != '\n') {
+            cin.get(nextChar);
+            if (nextChar != '\n') {
                 cout << "Enter an integer!\n";
-                cin.clear();
                 while (cin.get() != '\n');
                 continue;
             }
